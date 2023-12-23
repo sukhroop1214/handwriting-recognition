@@ -45,7 +45,7 @@ if not os.path.exists(dataset_path):
 
 dataset, vocab, max_len = [], set(), 0
 
-# Preprocess the dataset by the specific IAM_Words dataset file structure
+# Preprocess the dataset by the specific IAM Words dataset file structure
 words = open(os.path.join(dataset_path, "words.txt"), "r").readlines()
 for line in tqdm(words):
     if line.startswith("#"):
